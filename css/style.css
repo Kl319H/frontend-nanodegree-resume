@@ -26,15 +26,15 @@ h6 {
 
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: #000066;
   line-height: 48px;
   display: inline;
 }
 
 h2 {
-  font-weight: bold;
+  font-style: bold;
   font-size: 24px;
-  color: #999;
+  color: #000066;
   line-height: 29px;
   padding: 10px;
 }
@@ -42,14 +42,14 @@ h2 {
 h3 {
   font-style: bold;
   font-size: 20px;
-  color: #999;
+  color: #000066;
   line-height: 22px;
 }
 
 h4 {
   font-weight: bold;
   font-size: 14px;
-  color: #4a4a4a;
+  color: #000066;
   line-height: 17px;
 }
 
@@ -60,7 +60,9 @@ h5 {
   padding:10px 5%;
 }
 
-
+.light-grey-text{
+  color: #999;
+}
 .date-text {
   font-style: italic;
   font-size: 14px;
@@ -77,10 +79,6 @@ h5 {
   float: right;
 }
 
-.dark-link {
-    color: #1c4c54;
-}
-
 p {
   font-size: 14px;
   color: #333;
@@ -88,30 +86,34 @@ p {
 }
 
 a {
-  color: #1199c3;
+  color: #000066;
   text-decoration: none;
   margin-top: 10px;
   display: block;
 }
 
 .welcome-message {
-  font-style: italic;
-  font-size: 18px;
-  color: #f3f3f3;
+  font-weight: Bold;
+  font-size: 20px;
+  color: #000066;
   line-height: 28px;
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  color: #000066;
   display: block;
 }
 
-.orange {
-  background-color: #f5ae23;
+#skills {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.orange-text {
-  color: #f5ae23;
+#workExperience h2 {
+  margin-top: 0;
+}
+
+.blue-text {
+  color: #000066;
 }
 
 .white-text {
@@ -129,9 +131,11 @@ a {
   background-color: #4a4a4a;
 }
 
-/* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background:url("../images/green_wheat.jpg") no-repeat;
+  height: 450px;
+  background-size: cover;
+  background-color: black;
 }
 
 .flex-box {
@@ -168,8 +172,14 @@ span {
 
 #lets-connect {
   text-align: center;
+  background:url("../images/bottom_wheat.jpg") no-repeat;
+  background-size: cover;
 }
 
+#footerContacts {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
 
 /* Media queries to handle various device widths */
 
