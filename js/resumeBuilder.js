@@ -89,25 +89,25 @@ var education = {
       "title" : "Intro To Computer Science",
       "school" : "Udacity",
       "date" : "2016",
-      "URL" : "https://classroom.udacity.com/courses/cs101"
+      "url" : "https://classroom.udacity.com/courses/cs101"
     },
     {
       "title" : "Responsive Images",
       "school" : "Udacity",
       "date" : "2016",
-      "URL" : "https://classroom.udacity.com/courses/ud882"
+      "url" : "https://classroom.udacity.com/courses/ud882"
     },
     {
       "title" : "How to use Git and GitHub",
       "school" : "Udacity",
       "date" : "2016",
-      "URL" : "https://classroom.udacity.com/courses/ud775"
+      "url" : "https://classroom.udacity.com/courses/ud775"
     },
     {
       "title" : "Front-End Web Developer Nano Degree",
       "school" : "Udacity",
       "date" : "2016",
-      "URL" : "https://classroom.udacity.com/nanodegrees/nd001"
+      "url" : "https://classroom.udacity.com/nanodegrees/nd001"
     }
   ]
 };
@@ -145,7 +145,7 @@ for (var i = 0, totalCourses = education.onlineClasses.length; i < totalCourses;
         $("#education").append(HTMLschoolStart);
 
         var formattedTitle = HTMLonlineTitle
-          .replace("%data%", education.onlineClasses[i].title).replace("#", education.onlineClasses[i].URL);
+          .replace("%data%", education.onlineClasses[i].title).replace("#", education.onlineClasses[i].url);
         var formattedSchool = HTMLonlineSchool
           .replace("%data%", education.onlineClasses[i].school);
         $(".education-entry:last").append(formattedTitle + formattedSchool);
@@ -225,19 +225,19 @@ var projects = {
       "title" : "Meteor Simple Todo List",
       "dates" : "March 2016 - April 2016",
       "description" : "This was my first project, and my intoduction to JavaScript, CSS and HTML. It is as the title states, a simple todo list. This was made in Meteor 1.2.",
-      "images" : "images/meteorSimpleTodos.jpg"
+      "images" : ["images/meteorSimpleTodos.jpg"]
     },
     {
       "title" : "My Portfolio",
       "dates" : "May 2016",
       "description" : "This was my first project for the Udacity Front-End Web Developer Nanodegree. This is to be used as my online portfolio for potential employers to see. This is a work in progress. It will be updated as I complete projects and learn new techniques. It is responsive using bootstrap.",
-      "images" : "images/portfolio.jpg"
+      "images" : ["images/portfolio.jpg"]
     },
     {
       "title" : "Online Resume",
       "dates" : "June 2016",
       "description" : "This was my second project for the Udacity Front-End Web Developer Nanodegree. This is a work in progress. It will be updated with additional courses and projects.",
-      "images" : "images/onlineResume.jpg"
+      "images" : ["images/onlineResume.jpg"]
     }
   ],
   'display': function() {
